@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    width: 60px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: darkgray;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+header ul li a:hover, .sign-up {
+    background: #dc1014;
+}
+
+section {
+    padding: 100px 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+span {
+    color: #dc1014;
+}
+
+.main h2 {
+    font-size: 2.4em;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: #dc1014;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #bb0003;
+    transform: scale(1.1);
+}
+
+.contant {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 50px 30px 5px rgb(255, 228, 228);
+    border-radius: 20px;
+    transition: 0.7s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.borg {
+    width: 80%;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.hq {
+    width: 80%;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.info h2 {
+    margin: 5px 5px;
+}
+
+.info {
+    margin: 20px 30px;
+}
+
+.card:hover {
+    transform: scale(1.11);
+}
+
+.icon img {
+    width: 80px;
+    margin: 0 285px;
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+        background-attachment: scroll;
+    }
+
+    .main-contant h2 {
+        font-size: 1em;
+    }
+
+    .main-contant h3 {
+        font-size: 1.6em;
+    }
+
+    .contant {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-contant h2 {
+        font-size: 0.8em;
+    }
+
+    .main-contant h3 {
+        font-size: 1.4em;
+    }
+
+    .main {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+}
+

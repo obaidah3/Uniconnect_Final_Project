@@ -1,0 +1,25 @@
+ JavaScript file for UniConnect
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Page loaded successfully!");
+
+    // Example: Add click listener to Sign In button
+    const signInButton = document.querySelector(".sign-in");
+    console.log("Sign In button element:", signInButton);
+    signInButton.addEventListener("click", function() {
+        console.log("Sign In button clicked");
+        alert("Sign In functionality is not implemented yet.");
+    });
+
+     Example: Add functionality to search button
+    const searchButton = document.querySelector(".search-bar button");
+    console.log("Search button element:", searchButton);
+    searchButton.addEventListener("click", function() {
+        const searchInput = document.querySelector(".search-bar input").value;
+        console.log("Search button clicked, input value:", searchInput);
+        alert(`Searching for: ${searchInput}`);
+    });
+
+     Placeholder for other interactive features
+    console.log("Event listeners added successfully.");
+});
