@@ -1,0 +1,312 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@if (User.Identity.IsAuthenticated != true)
+{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /*.navbar {*/
+        /*    background-color: #ffffff;*/
+        /*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+        /*    padding: 1rem 2rem;*/
+        /*    display: flex;*/
+        /*    justify-content: space-between;*/
+        /*    align-items: center;*/
+        /*}*/
+        /*.navbar img {*/
+        /*    height: 40px;*/
+        /*    width: 40px;*/
+        /*}*/
+        /*.navbar .title {*/
+        /*    margin-left: 0.5rem;*/
+        /*    font-size: 1.25rem;*/
+        /*    font-weight: bold;*/
+        /*}*/
+        /*.navbar .links a {*/
+        /*    margin-left: 1.5rem;*/
+        /*    color: #4a5568;*/
+        /*    text-decoration: none;*/
+        /*    font-size: 1rem;*/
+        /*}*/
+        /*.navbar .links a:hover {*/
+        /*    color: #1a202c;*/
+        /*}*/
+        /*.navbar .sign-in {*/
+        /*    background-color: #f56565;*/
+        /*    color: #ffffff;*/
+        /*    padding: 0.5rem 1rem;*/
+        /*    border-radius: 0.375rem;*/
+        /*    text-decoration: none;*/
+        /*}*/
+        /*.navbar .sign-in:hover {*/
+        /*    background-color: #e53e3e;*/
+        /*}*/
+        .hero {
+            position: relative;
+        }
+        .hero img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero .overlay h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero .overlay p {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+        }
+        .hero .overlay a {
+            margin-top: 1.5rem;
+            background-color: #f56565;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .hero .overlay a:hover {
+            background-color: #e53e3e;
+        }
+        .commitment {
+            background-color: #ffffff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .commitment h2 {
+            color: #e53e3e;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .commitment p {
+            color: #4a5568;
+            font-size: 1.125rem;
+            margin: 2rem 0;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .stats .stat {
+            background-color: #e2e8f0;
+            flex: 1 1 calc(50% - 1rem);
+            max-width: calc(50% - 1rem);
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .commitment a {
+            background-color: #f56565;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .commitment a:hover {
+            background-color: #e53e3e;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="~/img/campus.jpg" alt="Campus Image">
+        <div class="overlay">
+            <h1>Explore campus &amp; connect with peers</h1>
+            <p>Stay informed and engaged with university updates</p>
+            <a asp-area="Identity" asp-page="/Account/Register">Join Us</a>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="commitment" id="about">
+        <h2>University's Commitment to Academic Excellence</h2>
+        <p>At Cyprus International University, we are dedicated to providing an exceptional academic experience. Our commitment to excellence is reflected in our rigorous curriculum, distinguished faculty, and state-of-the-art facilities. We strive to foster a learning environment that encourages innovation, critical thinking, and personal growth. Join us and be a part of a community that values academic integrity, lifelong learning, and the pursuit of knowledge.</p>
+        <div class="stats">
+            <div class="stat">100K+<br>Students</div>
+            <div class="stat">30+<br>Courses</div>
+            <div class="stat">10+<br>Startups</div>
+            <div class="stat">40+<br>Languages</div>
+            <div class="stat">1000+<br>Professors</div>
+        </div>
+        <a href="#">Apply Now</a>
+    </section>
+
+    <!-- Footer -->
+    
+</body>
+</html>
+
+
+}
+else
+{
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UniConnect</title>
+        <link rel="stylesheet" href="~/css/mainstyle.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        @* <header class="header"> *@
+        @*     <div class="logo"> *@
+        @*         <img src="~/img/ej (1).png"> *@
+        @*         <h1>UniConnect</h1> *@
+        @*     </div> *@
+        @*     <nav class="nav"> *@
+        @*         <ul> *@
+        @*             <li><a href="home.html">Home</a></li> *@
+        @*             <li><a href="campusnews.html">Campus News</a></li> *@
+        @*             <li><a href="newupdates.html">New Updates</a></li> *@
+        @*             <li><button class="sign-in">Sign In</button></li> *@
+        @*         </ul> *@
+        @*     </nav> *@
+        @* </header> *@
+
+        <section class="hero">
+            
+            <section class="hero" id="home">
+                @* <img src="~/img/campus.jpg" alt="Campus Image"> *@
+                <div class="overlay">
+                    <h2 class="one"> <b class="red">UniConnect </b> - Your Campus</h2>
+                    <h2 class="two"> Community Hub. Connect. Share. </h2>
+                    <h2 class="three">Discover.</h2>
+                </div>
+            </section>
+            
+            
+            @* <div class="search-bar"> *@
+            @*     <input type="text" placeholder="Search now..."> *@
+            @*     <button>Search Now</button> *@
+            @* </div> *@
+            @* <img src="~/img/white.jpg" alt="" class="white"> *@
+        </section>
+        
+        <h1 class="title">Discover Campus</h1>
+        <div class="container">
+            <div class="card" >
+               <a href="">
+                <span class="material-icons card-icon"> school</span>
+                <span class="card-text" >Professors & Staff</span>
+               </a>
+            </div>
+            <div class="card">
+                <a href="">
+                <span class="material-icons card-icon">article</span>
+                <span class="card-text">News & Updates</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                <span class="material-icons card-icon">event</span>
+                <span class="card-text">Events</span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                <span class="material-icons card-icon">business</span>
+                <span class="card-text">Buildings</span>
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                <span class="material-icons card-icon">restaurant</span>
+                <span class="card-text">Food & Dining</span>
+                </a>
+            </div>
+            <div class="card">
+                <a asp-action="GoToBus">
+                <span class="material-icons card-icon">directions_bus</span>
+                <span class="card-text">Bus Schedules</span>
+                </a>
+            </div>
+        </div>
+        
+         <h1 class="title"> Latest Updates</h1>
+        <div class="container2"> 
+            <div class="card2">
+                <a href="">
+                <img src="~/img/SEA.jpeg" alt="Opening Day of Sailing Season, Seattle WA">
+                <div class="card2-content">
+                    <div class="card2-title"><b> Day of Sailing Season, Seattle WA</b></div>
+                    <div class="card2-description">Join us as we celebrate sailing with music and more. There is something for everyone!</div>
+                </div>
+                </a>
+            </div>
+            <div class="card2">
+                <a href="">
+                <img src="~/img/labtob.jpeg" alt="How To Choose The Right Laptop">
+                <div class="card2-content">
+                    <div class="card2-title"><b>How To Choose The Right Laptop</b></div>
+                    <div class="card2-description">Choosing the right laptop can be tricky. Here’s a handy guide to help you make the best decision.</div>
+                </div>
+                </a>
+            </div>
+            <div class="card2">
+                <a href="">
+                <img src="~/img/car.jpeg" alt="How To Buy The Best Electric Car" class="car2">
+                <div class="card2-content">
+                    <div class="card2-title"><b> How To Buy The Best Electric Car</b></div>
+                    <div class="card2-description">Learn about the latest models and how to select the perfect electric car for your needs.</div>
+                
+                </div>
+                </a>
+            </div>
+        
+        </div>
+
+
+        <script src="~/js/mainscript.js"></script>
+    </body>
+    </html>
+
+}
+
+
+
+

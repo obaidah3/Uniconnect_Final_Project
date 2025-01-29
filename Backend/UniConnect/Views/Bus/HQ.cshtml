@@ -1,0 +1,25 @@
+@model List<char>
+
+@if (Model != null)
+{
+    <h1>Unique Arrival Times by Bus</h1>
+
+    <ul>
+        @foreach (var bus in Model)
+        {
+            <li>
+                <strong>@bus</strong>:
+                @* <ul> *@
+                @*     @foreach (var arrivalTime in bus.Select(b => b.arrival_time).Distinct()) *@
+                @*     { *@
+                @*         <li>@arrivalTime</li> *@
+                @*     } *@
+                @* </ul> *@
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No buses found.</p>
+}

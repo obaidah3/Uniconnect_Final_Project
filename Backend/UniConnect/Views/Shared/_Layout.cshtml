@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="~/css/NavStyles.css"/>
+    <link rel="stylesheet" href="~/css/footerStyles.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+          rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://www.ejust.edu.eg/newsite/images/ej.png"
+             alt="EJUST logo"/>
+        <h1>UniConnect</h1>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        @* <li><a class="sign-up" sp-area="Identity" asp-page="/Account/Register"> *@
+        @*         <button>Sign Up</button> *@
+        @*     </a></li> *@
+        <partial name="_LoginPartial"/>
+    </ul>
+</nav>
+
+
+@RenderBody()
+
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="https://www.ejust.edu.eg/ejust2023/img/ejlogo.png" alt="Company Logo" class="logo">
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 UniConnect. All rights reserved.</p>
+    </div>
+</footer>
+@await RenderSectionAsync("Scripts", required: false)
+
+<script src="~/js/NavScript.js"></script>
+</body>
+</html>

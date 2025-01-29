@@ -1,0 +1,49 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-just Bus Schedule</title>
+    <link rel="stylesheet" href="~/css/bus.css">
+    <script src="~/js/bus.js"></script>
+</head>
+<body>
+
+<section class="main">
+    <div>
+        <h2>E-just Bus <span>Schedule</span></h2>
+        <a href="#service" class="main-btn">View Schedule</a>
+    </div>
+</section>
+
+
+<section class="bus-card" id="service">
+    <div class="contant">
+
+
+        <div class="card">
+            <div class="icon"><img src="~/img/heart.png" alt="heart"></div>
+            <div class="photo"><img src="~/img/borg.png" class="borg"></div>
+            <div class="info"><h2>Borg El-Arab Bus</h2><p>From 9 AM to 4 PM</p></div>
+
+        </div>
+        <a href="/Bus/HQ">
+            <div class="card">
+                <div class="icon"><img src="~/img/heart.png"></div>
+                <div class="photo"><img class="hq" src="~/img/hq.png"></div>
+                <div class="info"><h2>HQ Bus</h2><p>From 9 AM to 4 PM</p></div>
+            </div>
+        </a>
+
+
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.logo{
+    margin: 0  20px;
+    color: #030303;
+    font-size: 25px;
+    font-family: "Protest Guerrilla", serif;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+
+}
+.logo h1:hover{
+    color: #dc1014;
+    transition: 0.5s;
+    
+     
+
+}
+.logo img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+a.sign-up {
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+a.sign-up button {
+    background-color: #dc1014;
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+a.sign-up:hover button {
+    background-color: #a80c0f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-list a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.sign-up li a{
+    color: #ffffff;
+}
+
+
+.nav-list a:hover {
+    color: #f00000;
+    border: #dc1014 2px  ;
+    border-radius: 5px;
+    transition: border 0.3s;
+
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #3f3f3f;
+    margin: 3px 0;
+    margin-right: 15PX;
+    transition: transform 0.3s, opacity 0.3s;
+
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        transition: opacity 0.3s, transform 0.3s;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    .nav-list.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-list a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-list a:hover {
+        background-color: #f0f0f0; /* Light gray background on hover */
+        color: #dc1014; /* Red text color on hover */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+
+    /* Hamburger icon animation */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo{
+        margin: 0  20px;
+        color: #030303;
+        font-size: 1.2rem;
+        font-family: "Protest Guerrilla", serif;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    
+    
+    }
+}
