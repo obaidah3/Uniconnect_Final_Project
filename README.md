@@ -1,4 +1,4 @@
-# 🚀 UniConnect: Your All-in-One University Companion 🌟
+![ezgif-7ccc3c09d74ff](https://github.com/user-attachments/assets/acd72bb5-ca4f-4bf3-9858-ef5f9a69e374)# 🚀 UniConnect: Your All-in-One University Companion 🌟
 
 
 ![UniConnect Banner](https://github.com/user-attachments/assets/30d386c7-3fda-4154-8aae-59c0a53967bf) 
@@ -12,44 +12,39 @@
 ## 📌 Table of Contents
 - 🔥 [Features](#-features)
 - 🛠️ [Tech Stack](#%EF%B8%8F-tech-stack)
-- 🚀 [Quick Start](#-quick-start)
-- 📅 [Upcoming Features](#-whats-next)
-- 🤝 [Contribute](#-contribute)
-- 📜 [License](#-license)
+
 
 ---
 
 ## 🔥 Features
 
-### 📚 **Professor Directory** *(Powered by SQL Server)*
-![Professor Feature](https://via.placeholder.com/400x200.png?text=AI-Powered+Professor+Search+%F0%9F%93%9A)  
-- Robust relational database storing 50+ professor profiles
-- Advanced search with SQL-powered queries
 
-### 🗺️ **Interactive Campus Map**
-![Map Feature](https://via.placeholder.com/400x200.png?text=Live+3D+Campus+Navigation+%F0%9F%97%BA)  
-- Spatial data storage for building coordinates
-- Fast location retrieval using SQL indexing
+### 🗺️ **Campus Map**
+![Map Feature](![Uploading image.png…]())  
 
-### 🗺️ **Interactive Campus Map**
-![Map Feature](https://via.placeholder.com/400x200.png?text=Live+3D+Campus+Navigation+%F0%9F%97%BA)  
-- Real-time building locations with AR navigation
 - "Where's My Class?" one-tap solution
 
 ### 🍔 **Campus Eats**
 ![Food Feature](https://via.placeholder.com/400x200.png?text=Smart+Food+Recommendations+%F0%9F%8D%94)  
-- Restaurant rankings with student reviews
-- Meal plan balance integration
+- Restaurant Menus and Locations
 
-### 🚌 **Smart Transit**
-![Transport Feature](https://via.placeholder.com/400x200.png?text=Live+Shuttle+Tracking+%F0%9F%9A%8C)  
-- Real-time shuttle tracking
-- Carpool matching system
+### 📚 **Professor Directory** *(Powered by SQL Server)*
+![Professor Feature](https://github.com/user-attachments/assets/3cb710bc-f83e-49bb-82a3-4bde4458ae61)
+  
+![Uploading ezgif-7ccc3c09d74ff.gif…]()
 
-### 📢 **Live News Hub**
+
+- Robust relational database storing professor profiles
+- Search with SQL-powered queries
+
+### 🚌 **Transportation**
+![Transport Feature](![Uploading image.png…]()
+)  
+
+
+### 📢 **News / Events Hub**
 ![News Feature](https://via.placeholder.com/400x200.png?text=Personalized+Event+Feed+%F0%9F%93%B0)  
-- Personalized event feed
-- Push notifications for urgent alerts
+
 
 ---
 
