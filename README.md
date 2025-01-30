@@ -1,3 +1,4 @@
+
 # 🚀 UniConnect: Your All-in-One University Companion 🌟
 
 
@@ -21,11 +22,10 @@
 
 ### 🔒 **Login Authentication System**
 <div align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Modern+Login+Interface+with+Social+Auth+%F0%9F%94%92" alt="Login System" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
+  <img src="https://github.com/user-attachments/assets/0da34611-d9c9-44e6-901a-7f1b9faaf6bd" alt="Login System" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
 </div>
 
 #### Key Authentication Features:
-- **Social Login** (Google, Microsoft, Facebook)
 - **Password Strength Meter**
 - **Session Management**
 
